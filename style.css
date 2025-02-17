@@ -307,7 +307,7 @@ main {
 .options {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 0;
+  margin: 5px 0;
   gap: 20px;
 }
 
@@ -360,7 +360,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-.storage-options,.color-options {
+.storage-options,.color-options,.region {
   margin: 10px 0;
   display: flex;
     align-items: center;
@@ -409,20 +409,4 @@ main {
     height: calc(100% - 10px);
     margin: 0px;
     width: calc(100% - 10px);
-}
-
-.black {
-  background: #4F4F4F;
-}
-.pink {
-  background: #F4B3DD;
-}
-.green {
-  background: #B7D7D6;
-}
-.blue {
-  background: #A2B3F8;
-}
-.white{
-  background: #FAFAFA;
 }

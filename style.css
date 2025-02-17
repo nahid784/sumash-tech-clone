@@ -271,16 +271,20 @@ main {
   font-size: 15px;
   font-weight: 500;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .in-stock {
   color: green;
 }
 
-.warranty {
-  margin: 10px 0;
+.info{
+  background-color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 16px;
 }
 
 .options {

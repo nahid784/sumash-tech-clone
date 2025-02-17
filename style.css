@@ -196,14 +196,14 @@ main {
 .col2 {
   width: 58%;
 }
-.product-image {
+.c1-r1 {
   position: relative;
   margin-right: 20px;
   background: white;
   border-radius: 6px;
 }
 
-.product-image img {
+.c1-r1 img {
   width: 100%;
   border-radius: 10px;
 }
@@ -234,15 +234,17 @@ main {
     z-index: 2
 }
 
-.product-details {
+.c2{
   background-color: var(--bg-color-one);
-  margin-bottom: 12px;
-  position: relative;
   border: 1px solid var(--bg-color-two);
   border-radius: 6px;
+  margin-bottom: 12px;
   padding: 24px 20px;
+  position: relative;
 }
-.product-details h1 {
+
+/* col2 r1 */
+.c2.r1 h1 {
   font-size: 35px;
   font-weight: 500;
   line-height: 1.2;
@@ -339,45 +341,88 @@ main {
   text-transform: none;
 }
 
-.storage-options {
+/* col2 row 2 */
+.c2.r2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.c2.r2 h4{
+  display: block;
+    font-size: 16px;
+    margin-bottom: 0;
+    width: 90px;
+}
+
+.c2 .variants{
+  align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+.storage-options,.color-options {
   margin: 10px 0;
+  display: flex;
+    align-items: center;
 }
 
-.storage {
-  padding: 8px 15px;
-  border: none;
-  background: #ddd;
-  cursor: pointer;
-  margin-right: 5px;
+.button1 {
+  align-items: center;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    display: inline-flex;
+    font-weight: 500;
+    padding: 5px 16px;
+    text-transform: uppercase;
+    margin: 8px;
+    line-height: 1.8em;
 }
 
-.storage.active {
+.button1.active {
   background: teal;
   color: white;
 }
 
-.color-options {
-  margin-top: 10px;
+.color {
+  align-items: center;
+    background-color: #fff;
+    border: 2px solid #d3d3d3;
+    border-radius: 100px;
+    display: inline-flex;
+    height: 40px;
+    justify-content: center;
+    margin: 5px;
+    padding: 0;
+    width: 40px;
+    cursor: pointer;
 }
 
-.color {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-right: 5px;
-  cursor: pointer;
+.color:active{
+  border-color:black ;
+}
+
+.color-cirlce{
+  border-radius: 100px;
+    display: block;
+    height: calc(100% - 10px);
+    margin: 0px;
+    width: calc(100% - 10px);
 }
 
 .black {
-  background: black;
+  background: #4F4F4F;
 }
 .pink {
-  background: pink;
+  background: #F4B3DD;
 }
 .green {
-  background: lightgreen;
+  background: #B7D7D6;
 }
 .blue {
-  background: blue;
+  background: #A2B3F8;
+}
+.white{
+  background: #FAFAFA;
 }

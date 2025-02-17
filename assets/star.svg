@@ -1,0 +1,7 @@
+<svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle Background -->
+  <circle cx="12" cy="12" r="10" fill="#111820"/> 
+  
+  <!-- Star Icon -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.91 19L12 16L7.09 19L8.5 13.14L4 9.27L9.91 8.26L12 3Z" fill="white"/>
+</svg>

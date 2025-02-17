@@ -236,11 +236,12 @@ main {
 
 .c2{
   background-color: var(--bg-color-one);
-  border: 1px solid var(--bg-color-two);
+  border: none;
   border-radius: 6px;
   margin-bottom: 12px;
   padding: 24px 20px;
   position: relative;
+  
 }
 
 /* col2 r1 */
@@ -409,4 +410,54 @@ main {
     height: calc(100% - 10px);
     margin: 0px;
     width: calc(100% - 10px);
+}
+
+/* c2 r3 */
+
+.c2.r3{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.points{
+  align-items: center;
+    background-color: var(--bg-color-two);
+    border-radius: 8px;
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    width: calc(25% - 16px);
+    flex-wrap: wrap;
+}
+
+.points .rating{
+  color: currentColor;
+    font-size: 24px;
+    margin-bottom: 4px;
+    color: #111926;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin: 0 0 16px;
+}
+
+.points .r_name{
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.points i{
+ font-size: 30px;
+  margin-bottom: 8px;
+    
+}
+
+.points .svg{
+  height: 30px;
+    margin-bottom: 8px;
+    width: 30px;
 }

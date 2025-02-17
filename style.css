@@ -285,17 +285,34 @@ width: 100%;
 }
 
 .options {
+  display: flex;
   margin: 10px 0;
+  gap: 20px;
 }
 
-.btn {
-  padding: 8px 15px;
-  border: none;
-  background: #ddd;
-  cursor: pointer;
-  margin-right: 5px;
+.options .btn {
+  align-items: center;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    display: inline-flex;
+    font-weight: 500;
+    padding: 8px 16px;
+    text-transform: uppercase;
 }
-
+.options .btn-green{
+  align-items: center;
+    
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    display: inline-flex;
+    font-weight: 500;
+    padding: 8px 16px;
+    text-transform: uppercase;
+  background-color: var(--primary-color);
+}
 .storage-options {
   margin: 10px 0;
 }

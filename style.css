@@ -14,7 +14,7 @@
   --text-color: #000;
   --bg-color-one: #fff;
   --bg-color-two: #f2f2f2;
-  --secondary: #F2F4F8;
+  --secondary: #f2f4f8;
 }
 
 body {
@@ -24,7 +24,6 @@ body {
   font-size: 14px;
   line-height: 1.8em;
   margin: 15px;
-  padding: 0px .75rem;
 }
 
 header {
@@ -41,7 +40,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .nav-left {
   display: flex;
@@ -149,20 +147,21 @@ nav ul li a:hover {
   text-align: center;
 }
 
-main{
-    background-color: #f2f4f8;
-    padding: 10px 0px;
+main {
+  background-color: #f2f4f8;
+  padding: 10px 0px;
+  border-radius: 25px;
 }
 
-.single-product{
-    display: flex;
-    margin: auto;
-    max-width: 1320px;
-    flex-direction: column;
+.single-product {
+  display: flex;
+  margin: auto;
+  max-width: 1320px;
+  flex-direction: column;
 }
 .search-bar {
-width: 100%;
- margin: auto;
+  width: 100%;
+  margin: auto;
 }
 
 .search-bar input {
@@ -172,10 +171,9 @@ width: 100%;
   border-radius: 6px;
 }
 
-.search-bar input::placeholder{
-    color: #b6b8bb;
+.search-bar input::placeholder {
+  color: #b6b8bb;
 }
-
 
 .breadcrumb {
   margin: 10px;
@@ -183,7 +181,7 @@ width: 100%;
   color: var(--text-color);
 }
 
-.product-container{
+.product-container {
   display: flex;
   justify-content: center;
   max-width: 1320px;
@@ -191,51 +189,66 @@ width: 100%;
   margin: 0 auto;
   gap: 20px;
 }
-.col1{
+.col1 {
   width: 42%;
 }
 
-.col2{
+.col2 {
   width: 58%;
 }
-.product-image {
+.c1-r1 {
   position: relative;
   margin-right: 20px;
   background: white;
   border-radius: 6px;
 }
 
-.product-image img {
+.c1-r1 img {
   width: 100%;
   border-radius: 10px;
 }
 
-.earn-points {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #4caf50;
-  color: white;
-  padding: 5px 10px;
-  font-size: 12px;
-  border-radius: 5px;
+.point-badge{
+  background-color: #f2f4f8;
+    color: var(--primary-color);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    left: 0;
+    padding: 6px 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    transform: rotate(-45deg) translate(-28%, -22%);
+    width: 170px;
+    overflow: hidden;
 }
 
-.product-details {
-  background-color: var(--bg-color-one);
-    margin-bottom: 12px;
-    position: relative;
-    border: 1px solid var(--bg-color-two);
-    border-radius: 6px;
-    padding: 24px 20px;
-    
+.badge{
+  max-width: 20vw;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 100px;
+    z-index: 2
 }
-.product-details h1{
+
+.c2{
+  background-color: var(--bg-color-one);
+  border: 1px solid var(--bg-color-two);
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 24px 20px;
+  position: relative;
+}
+
+/* col2 r1 */
+.c2.r1 h1 {
   font-size: 35px;
   font-weight: 500;
-    line-height: 1.2;
+  line-height: 1.2;
 }
-
 
 .sub-title {
   font-size: 16px;
@@ -249,13 +262,13 @@ width: 100%;
 
 .price {
   display: flex;
-    flex-direction: column;
-    float: right;
-    margin-left: 12px;
-    margin-top: 6px;
-    text-align: right;
+  flex-direction: column;
+  float: right;
+  margin-left: 12px;
+  margin-top: 6px;
+  text-align: right;
 }
-.discount-info{
+.discount-info {
   color: var(--dark-color);
 }
 
@@ -272,69 +285,128 @@ width: 100%;
 }
 
 .stock {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .in-stock {
   color: green;
 }
 
-.warranty {
-  margin: 10px 0;
+.info{
+  background-color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 16px;
 }
 
 .options {
-  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0;
+  gap: 20px;
 }
 
-.btn {
-  padding: 8px 15px;
-  border: none;
-  background: #ddd;
+.options .btn {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  display: inline-flex;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-transform: uppercase;
   cursor: pointer;
-  margin-right: 5px;
+}
+.options .btn.green {
+  background: var(--primary-color);
+}
+.options .btn.green i {
+  font-size: 15px;
 }
 
-.storage-options {
+.options .btn.cmp {
+  display: flex;
+  gap: 5px;
+}
+
+.options .btn.whatsapp {
+  border: 1px solid #25b43c;
+  color: #25b43c;
+  text-transform: none;
+}
+
+/* col2 row 2 */
+.c2.r2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.c2.r2 h4{
+  display: block;
+    font-size: 16px;
+    margin-bottom: 0;
+    width: 90px;
+}
+
+.c2 .variants{
+  align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+.storage-options,.color-options,.region {
   margin: 10px 0;
+  display: flex;
+    align-items: center;
 }
 
-.storage {
-  padding: 8px 15px;
-  border: none;
-  background: #ddd;
-  cursor: pointer;
-  margin-right: 5px;
+.button1 {
+  align-items: center;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    display: inline-flex;
+    font-weight: 500;
+    padding: 5px 16px;
+    text-transform: uppercase;
+    margin: 8px;
+    line-height: 1.8em;
 }
 
-.storage.active {
+.button1.active {
   background: teal;
   color: white;
 }
 
-.color-options {
-  margin-top: 10px;
-}
-
 .color {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-right: 5px;
-  cursor: pointer;
+  align-items: center;
+    background-color: #fff;
+    border: 2px solid #d3d3d3;
+    border-radius: 100px;
+    display: inline-flex;
+    height: 40px;
+    justify-content: center;
+    margin: 5px;
+    padding: 0;
+    width: 40px;
+    cursor: pointer;
 }
 
-.black {
-  background: black;
+.color:active{
+  border-color:black ;
 }
-.pink {
-  background: pink;
-}
-.green {
-  background: lightgreen;
-}
-.blue {
-  background: blue;
+
+.color-cirlce{
+  border-radius: 100px;
+    display: block;
+    height: calc(100% - 10px);
+    margin: 0px;
+    width: calc(100% - 10px);
 }

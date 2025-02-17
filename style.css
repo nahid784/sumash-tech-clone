@@ -24,7 +24,6 @@ body {
   font-size: 14px;
   line-height: 1.8em;
   margin: 15px;
-  padding: 0px 0.75rem;
 }
 
 header {
@@ -151,6 +150,7 @@ nav ul li a:hover {
 main {
   background-color: #f2f4f8;
   padding: 10px 0px;
+  border-radius: 25px;
 }
 
 .single-product {

@@ -14,7 +14,7 @@
   --text-color: #000;
   --bg-color-one: #fff;
   --bg-color-two: #f2f2f2;
-  --secondary: #F2F4F8;
+  --secondary: #f2f4f8;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
   font-size: 14px;
   line-height: 1.8em;
   margin: 15px;
-  padding: 0px .75rem;
+  padding: 0px 0.75rem;
 }
 
 header {
@@ -41,7 +41,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .nav-left {
   display: flex;
@@ -149,20 +148,20 @@ nav ul li a:hover {
   text-align: center;
 }
 
-main{
-    background-color: #f2f4f8;
-    padding: 10px 0px;
+main {
+  background-color: #f2f4f8;
+  padding: 10px 0px;
 }
 
-.single-product{
-    display: flex;
-    margin: auto;
-    max-width: 1320px;
-    flex-direction: column;
+.single-product {
+  display: flex;
+  margin: auto;
+  max-width: 1320px;
+  flex-direction: column;
 }
 .search-bar {
-width: 100%;
- margin: auto;
+  width: 100%;
+  margin: auto;
 }
 
 .search-bar input {
@@ -172,10 +171,9 @@ width: 100%;
   border-radius: 6px;
 }
 
-.search-bar input::placeholder{
-    color: #b6b8bb;
+.search-bar input::placeholder {
+  color: #b6b8bb;
 }
-
 
 .breadcrumb {
   margin: 10px;
@@ -183,7 +181,7 @@ width: 100%;
   color: var(--text-color);
 }
 
-.product-container{
+.product-container {
   display: flex;
   justify-content: center;
   max-width: 1320px;
@@ -191,11 +189,11 @@ width: 100%;
   margin: 0 auto;
   gap: 20px;
 }
-.col1{
+.col1 {
   width: 42%;
 }
 
-.col2{
+.col2 {
   width: 58%;
 }
 .product-image {
@@ -223,19 +221,17 @@ width: 100%;
 
 .product-details {
   background-color: var(--bg-color-one);
-    margin-bottom: 12px;
-    position: relative;
-    border: 1px solid var(--bg-color-two);
-    border-radius: 6px;
-    padding: 24px 20px;
-    
+  margin-bottom: 12px;
+  position: relative;
+  border: 1px solid var(--bg-color-two);
+  border-radius: 6px;
+  padding: 24px 20px;
 }
-.product-details h1{
+.product-details h1 {
   font-size: 35px;
   font-weight: 500;
-    line-height: 1.2;
+  line-height: 1.2;
 }
-
 
 .sub-title {
   font-size: 16px;
@@ -249,13 +245,13 @@ width: 100%;
 
 .price {
   display: flex;
-    flex-direction: column;
-    float: right;
-    margin-left: 12px;
-    margin-top: 6px;
-    text-align: right;
+  flex-direction: column;
+  float: right;
+  margin-left: 12px;
+  margin-top: 6px;
+  text-align: right;
 }
-.discount-info{
+.discount-info {
   color: var(--dark-color);
 }
 
@@ -272,8 +268,11 @@ width: 100%;
 }
 
 .stock {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .in-stock {
@@ -292,27 +291,34 @@ width: 100%;
 
 .options .btn {
   align-items: center;
-    background-color: #fff;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    color: var(--primary-color);
-    display: inline-flex;
-    font-weight: 500;
-    padding: 8px 16px;
-    text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  display: inline-flex;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-.options .btn-green{
-  align-items: center;
-    
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    color: var(--primary-color);
-    display: inline-flex;
-    font-weight: 500;
-    padding: 8px 16px;
-    text-transform: uppercase;
-  background-color: var(--primary-color);
+.options .btn.green {
+  background: var(--primary-color);
 }
+.options .btn.green i {
+  font-size: 15px;
+}
+
+.options .btn.cmp {
+  display: flex;
+  gap: 5px;
+}
+
+.options .btn.whatsapp {
+  border: 1px solid #25b43c;
+  color: #25b43c;
+  text-transform: none;
+}
+
 .storage-options {
   margin: 10px 0;
 }

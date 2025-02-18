@@ -448,6 +448,12 @@ main {
   text-transform: uppercase;
   margin: 8px;
   line-height: 1.8em;
+  cursor: pointer;
+}
+
+.button1:hover{
+  background: teal;
+  color: white;
 }
 
 .button1.active {
@@ -480,6 +486,11 @@ main {
   margin: 0px;
   width: calc(100% - 10px);
 }
+
+.color:hover{
+  border-color: black;
+}
+
 
 /* c2 r3 */
 

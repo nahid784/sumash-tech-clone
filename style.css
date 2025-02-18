@@ -278,13 +278,9 @@ main {
   justify-content: center;
   margin: 5px;
   width: 38px;
-  
-
 }
 
-
-
-.s-icon:hover{
+.s-icon:hover {
   cursor: pointer;
   background-color: white;
   filter: invert(1);
@@ -663,4 +659,69 @@ main {
 /* Icons */
 button i {
   font-size: 14px;
+}
+
+.related-product-container {
+  max-width: 1320px;
+}
+
+.related-product {
+  background-color: var(--bg-color-one);
+  border: 1px solid var(--bg-color-two);
+  border-radius: 6px;
+  padding: 14px;
+  margin-bottom: 2rem;
+}
+
+.related-product .r-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.phone1 {
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px;
+  position: relative;
+}
+
+.phn-img {
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  height: 80px;
+  margin: 0 12px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 80px;
+  z-index: 2;
+}
+
+.phn-img img {
+  max-width: 100%;
+}
+
+.pbadge {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pbadge .badge {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1em;
+  margin-bottom: 8px;
+  padding: 3px 4px;
+  text-transform: uppercase;
+  max-width: 65px;
+  right: -70px;
+  top: 0px;
+  /* width: 65px; */
+  z-index: 2;
+  text-align: center;
 }

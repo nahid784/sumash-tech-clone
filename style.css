@@ -577,6 +577,13 @@ main {
   padding: 8px 24px;
   width: 100%;
   line-height: 1.8em;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.3s;
 }
 
 .buy-now {
@@ -589,15 +596,15 @@ main {
   font-weight: 400;
   outline: none;
   padding: 8px 24px;
+  width: 100%;
   text-transform: capitalize;
-}
-
-.add-to-cart:hover {
-  background: #d32f2f;
+  line-height: 1.8em;
+  cursor: pointer;
 }
 
 .buy-now:hover {
   background: #0097a7;
+  transition: 0.3s;
 }
 
 /* Icons */

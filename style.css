@@ -36,6 +36,10 @@ header {
   margin-right: auto;
 }
 
+.menu-icon, .menu-checkbox {
+  display: none; /* Hide menu icon by default */
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -747,3 +751,83 @@ button i {
   font-size: 80%;
   margin-left: 10px;
 }
+
+
+
+/* Responsive Part */
+
+
+@media screen and (max-width: 1200px) {
+  .nav-left nav,
+  .categories {
+    display: none; /* Hide desktop menu */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon */
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-checkbox:checked ~ nav {
+    display: flex; /* Show menu when checkbox is checked */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px; /* Adjust position under navbar */
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .menu-checkbox:checked ~ nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-checkbox:checked ~ nav ul li {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* @media (min-width: 1200px) {
+  sdheader, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1140px;
+  }
+} */
+
+@media (min-width: 992px) {
+  dheader, .container-lg, .container-md, .container-sm {
+      max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+  } 
+  
+  .container-md, .container-sm {
+      max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+      max-width: 540px;
+  }
+}
+
+/* .sd{
+  margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
+    width: 100%;
+} */

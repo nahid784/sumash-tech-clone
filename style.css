@@ -865,6 +865,11 @@ button i {
 }
 
 @media screen and (max-width: 576px) {
+  /* 540px */
+  header{
+    width: 100%;
+  }
+
   .phone1{
     flex: 0 0 auto;
     width: 100%;

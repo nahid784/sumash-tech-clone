@@ -512,7 +512,6 @@ main {
   font-family: Open Sans, sans-serif;
   font-weight: 600;
   line-height: 1.3em;
-  margin: 0 0 16px;
 }
 
 .points .r_name {
@@ -930,5 +929,14 @@ button i {
   flex-direction: column;
   align-items: flex-start;
 }
+/* .points .r_name {
+  font-size: 12px;
+} */
+.c2.r3{
+  padding: 10px;
+}
+
+
+
 
 }

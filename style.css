@@ -836,6 +836,27 @@ button i {
   font-weight: 500;
 }
 
+.showcase-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+  word-wrap: break-word;
+  background-clip: border-box;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 15px;
+}
+
+.showcase-card .show-img{
+  width: 100%;
+}
+
+.show-img img{
+  max-width: 100%;
+}
+
 /* Responsive Part */
 /* max-width = 1200 */
 @media screen and (max-width: 1200px) {

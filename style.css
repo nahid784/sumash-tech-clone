@@ -36,8 +36,16 @@ header {
   margin-right: auto;
 }
 
-.menu-icon, .menu-checkbox {
+.mobile-nav {
+  display: none;
+}
+
+.menu-icon {
   display: none; /* Hide menu icon by default */
+}
+
+.menu-checkbox {
+  display: none; /* Hide checkbox */
 }
 
 .navbar {
@@ -164,6 +172,7 @@ main {
   margin: auto;
   max-width: 1320px;
   flex-direction: column;
+  justify-content: center;
 }
 .search-bar {
   width: 100%;
@@ -667,6 +676,7 @@ button i {
 
 .related-product-container {
   max-width: 1320px;
+  padding: 20px;
 }
 
 .related-product {
@@ -691,11 +701,14 @@ button i {
 
 .phone1 {
   background-color: #fff;
+  border: 0.5px solid rgb(228, 228, 228);
   border-radius: 6px;
   display: flex;
   flex-wrap: wrap;
   padding: 12px;
   position: relative;
+  margin-bottom: 10px;
+  width: 300px;
 }
 
 .phn-img {
@@ -710,7 +723,13 @@ button i {
 }
 
 .phn-img img {
+  flex-shrink: 1;
   max-width: 100%;
+  height: auto;
+}
+
+.phone1 .phn-des {
+  width: calc(100% - 92px);
 }
 
 .pbadge {
@@ -752,15 +771,29 @@ button i {
   margin-left: 10px;
 }
 
-
-
 /* Responsive Part */
-
-
+/* max-width = 1200 */
 @media screen and (max-width: 1200px) {
-  .nav-left nav,
+  header {
+    max-width: 1140px;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .mobile-nav .ph-logo {
+    font-size: 25px;
+  }
+
+  .nav-left,
+  .nav-right,
   .categories {
-    display: none; /* Hide desktop menu */
+    display: none;
+    /* Hide desktop menu */
   }
 
   .menu-icon {
@@ -768,66 +801,87 @@ button i {
     font-size: 24px;
     cursor: pointer;
   }
+  .phone1 {
+    flex: 0 0 auto;
+    width: 30%;
+    
+  }
+}
 
-  .menu-checkbox:checked ~ nav {
-    display: flex; /* Show menu when checkbox is checked */
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 60px; /* Adjust position under navbar */
-    left: 0;
+/* max-width = 992 */
+@media screen and (max-width: 992px) {
+  .product-container,
+  .single-product,
+  .related-product-container {
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    display: flex;
+  }
+
+  .col1,
+  .col2,
+  .related-product {
+    flex-shrink: 0;
     width: 100%;
+  }
+
+  .row1 .points {
+    margin: 4px;
+    padding: 5px;
+    width: calc(25% - 8px);
+  }
+
+  .row2 .psection {
     padding: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+    text-align: left;
   }
 
-  .menu-checkbox:checked ~ nav ul {
-    display: flex;
-    flex-direction: column;
-  }
+  .phone1 {
+    width: 32%;
 
-  .menu-checkbox:checked ~ nav ul li {
-    padding: 10px;
-    text-align: center;
   }
 }
 
-/* @media (min-width: 1200px) {
-  sdheader, .container-lg, .container-md, .container-sm, .container-xl {
-      max-width: 1140px;
+@media screen and (max-width: 768px) {
+  .phone1{
+    flex: 0 0 auto;
+    width: 49%;
   }
-} */
 
-@media (min-width: 992px) {
-  dheader, .container-lg, .container-md, .container-sm {
-      max-width: 960px;
-  }
-}
-
-@media (min-width: 768px) {
-  header{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    min-height: 60px;
-  } 
-  
-  .container-md, .container-sm {
-      max-width: 720px;
+  .row2 .psection {
+    padding: 5px;
+    text-align: left;
   }
 }
 
-@media (min-width: 576px) {
-  .container, .container-sm {
-      max-width: 540px;
+@media screen and (max-width: 576px) {
+  .phone1{
+    flex: 0 0 auto;
+    width: 100%;
   }
-}
-
-/* .sd{
-  margin-left: auto;
+  .product-container,
+  .single-product,
+  .related-product-container {
+    flex-wrap: wrap;
+    max-width: 540px;
+    margin-left: auto;
     margin-right: auto;
-    padding-left: var(--bs-gutter-x, .75rem);
-    padding-right: var(--bs-gutter-x, .75rem);
-    width: 100%;
-} */
+    display: flex;
+  }
+
+  .r3 .quantity,.cart-btn,.buy-btn{
+   width: 100%; 
+  }
+  .related-product{
+    background-color: transparent;
+    padding: 0;
+  }
+  
+}
+.navbar, body{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

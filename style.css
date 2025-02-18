@@ -910,5 +910,17 @@ button i {
 .price-content p{
   font-size: 10px;
 }
-  
+
+.price-box input {
+  height: 20px;
+  margin-right: 10px;
+  width: 15px;
+}
+
+.row2 .psection {
+  padding: 0;
+  padding-left: 2px;
+}
+
+
 }

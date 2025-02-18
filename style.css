@@ -922,5 +922,8 @@ button i {
   padding-left: 2px;
 }
 
+.row {
+  justify-content: center;
+}
 
 }

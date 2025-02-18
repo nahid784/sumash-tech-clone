@@ -210,40 +210,39 @@ main {
   border-radius: 10px;
 }
 
-.point-badge{
+.point-badge {
   background-color: #f2f4f8;
-    color: var(--primary-color);
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-    left: 0;
-    padding: 6px 0;
-    position: absolute;
-    text-align: center;
-    text-transform: uppercase;
-    top: 0;
-    transform: rotate(-45deg) translate(-28%, -22%);
-    width: 170px;
-    overflow: hidden;
+  color: var(--primary-color);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  left: 0;
+  padding: 6px 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  transform: rotate(-45deg) translate(-28%, -22%);
+  width: 170px;
+  overflow: hidden;
 }
 
-.badge{
+.badge {
   max-width: 20vw;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 100px;
-    z-index: 2
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 100px;
+  z-index: 2;
 }
 
-.c2{
+.c2 {
   background-color: var(--bg-color-one);
   border: none;
   border-radius: 6px;
   margin-bottom: 12px;
   padding: 24px 20px;
   position: relative;
-  
 }
 
 /* col2 r1 */
@@ -299,12 +298,12 @@ main {
   color: green;
 }
 
-.info{
+.info {
   background-color: #fff;
-    border-radius: 5px;
-    font-size: 14px;
-    margin: 5px;
-    padding: 4px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 16px;
 }
 
 .options {
@@ -345,42 +344,44 @@ main {
 }
 
 /* col2 row 2 */
-.c2.r2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.c2.r2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.c2.r2 h4{
+.c2.r2 h4 {
   display: block;
-    font-size: 16px;
-    margin-bottom: 0;
-    width: 90px;
+  font-size: 16px;
+  margin-bottom: 0;
+  width: 90px;
 }
 
-.c2 .variants{
+.c2 .variants {
   align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
-.storage-options,.color-options,.region {
+.storage-options,
+.color-options,
+.region {
   margin: 10px 0;
   display: flex;
-    align-items: center;
+  align-items: center;
 }
 
 .button1 {
   align-items: center;
-    background-color: #fff;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    color: var(--primary-color);
-    display: inline-flex;
-    font-weight: 500;
-    padding: 5px 16px;
-    text-transform: uppercase;
-    margin: 8px;
-    line-height: 1.8em;
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  display: inline-flex;
+  font-weight: 500;
+  padding: 5px 16px;
+  text-transform: uppercase;
+  margin: 8px;
+  line-height: 1.8em;
 }
 
 .button1.active {
@@ -390,83 +391,83 @@ main {
 
 .color {
   align-items: center;
-    background-color: #fff;
-    border: 2px solid #d3d3d3;
-    border-radius: 100px;
-    display: inline-flex;
-    height: 40px;
-    justify-content: center;
-    margin: 5px;
-    padding: 0;
-    width: 40px;
-    cursor: pointer;
-}
-
-.color:active{
-  border-color:black ;
-}
-
-.color-cirlce{
+  background-color: #fff;
+  border: 2px solid #d3d3d3;
   border-radius: 100px;
-    display: block;
-    height: calc(100% - 10px);
-    margin: 0px;
-    width: calc(100% - 10px);
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  margin: 5px;
+  padding: 0;
+  width: 40px;
+  cursor: pointer;
+}
+
+.color:active {
+  border-color: black;
+}
+
+.color-cirlce {
+  border-radius: 100px;
+  display: block;
+  height: calc(100% - 10px);
+  margin: 0px;
+  width: calc(100% - 10px);
 }
 
 /* c2 r3 */
 
-.row1{
+.row1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.points{
+.points {
   align-items: center;
-    background-color: var(--bg-color-two);
-    border-radius: 8px;
-    color: var(--dark-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 8px;
-    padding: 10px;
-    text-align: center;
-    width: calc(25% - 16px);
-    flex-wrap: wrap;
+  background-color: var(--bg-color-two);
+  border-radius: 8px;
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8px;
+  padding: 10px;
+  text-align: center;
+  width: calc(25% - 16px);
+  flex-wrap: wrap;
 }
 
-.points .rating{
+.points .rating {
   color: currentColor;
-    font-size: 24px;
-    margin-bottom: 4px;
-    color: #111926;
-    font-family: Open Sans, sans-serif;
-    font-weight: 600;
-    line-height: 1.3em;
-    margin: 0 0 16px;
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: #111926;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  line-height: 1.3em;
+  margin: 0 0 16px;
 }
 
-.points .r_name{
+.points .r_name {
   font-size: 14px;
   line-height: 1.2em;
 }
 
-.points i{
- font-size: 30px;
+.points i {
+  font-size: 30px;
   margin-bottom: 8px;
-    
 }
 
-.points .svg{
+.points .svg {
   height: 30px;
-    margin-bottom: 8px;
-    width: 30px;
+  margin-bottom: 8px;
+  width: 30px;
 }
 
 /* row 2 */
-.row2,.row3{
+.row2,
+.row3 {
   margin-top: 4px;
   display: flex;
   margin-top: 8px;
@@ -478,107 +479,117 @@ main {
   flex-wrap: wrap;
 }
 
-.psection{
+.psection {
   align-items: center;
-    background-color: var(--bg-color-two);
-    border: 1px solid transparent;
-    border-radius: 8px;
-    color: var(--dark-color);
-    display: flex;
-    justify-content: center;
-    margin: 8px;
-    text-align: center;
-    width: calc(50% - 16px);
-    border-color: #acacac;
-    flex-direction: row;
-    height: auto;
-    padding: 20px 30px 20px 20px;
+  background-color: var(--bg-color-two);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+  text-align: center;
+  width: calc(50% - 16px);
+  border-color: #acacac;
+  flex-direction: row;
+  height: auto;
+  padding: 20px 30px 20px 20px;
 }
 
-.psection .price-box{
+.psection .price-box {
   display: flex;
   align-items: center;
 }
 
-.price-box input{
+.price-box input {
   height: 20px;
-    margin-right: 15px;
-    width: 20px;
+  margin-right: 15px;
+  width: 20px;
 }
 
 /* row3 */
 
 /* Quantity Selector */
-.quantity {
-  display: flex;
-  align-items: center;
-  border: 1px solid #009688;
-  border-radius: 5px;
-  overflow: hidden;
-  width: calc(33.33% - 16px);
+.quantity,
+.cart-btn,
+.buy-btn {
   position: relative;
-  justify-content: space-around;
-  
+  width: calc(33.33% - 16px);
+  margin: 8px;
 }
-.quantity .read{
-    /* background: var(--bg-color-one);
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    color: var(--primary-color);
-    font-size: 16px;
-    font-weight: 400;
-    padding: 8px;
-    text-align: center;
-    width: 100%; */
+.quantity .read {
+  background: var(--bg-color-one);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  line-height: 1.7em;
 }
 
 .qty-btn {
-  background: #009688;
-  color: white;
-  border: none;
-  padding: 8px 12px;
+  align-items: center;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  line-height: 0;
+  padding: 0;
+  position: absolute;
+  width: 24px;
+  top: 10px;
+  font-weight: bold;
+  font-size: 25px;
   cursor: pointer;
 }
 
-.qty-btn:hover {
-  background: #00796b;
+.qty-btn.minus {
+  left: 5px;
 }
 
-.quantity input {
-  width: 40px;
-  text-align: center;
-  border: none;
-  font-size: 16px;
+.qty-btn.plus {
+  right: 5px;
+}
+
+.qty-btn.minus:hover,
+.qty-btn.plus:hover {
+  background-color: white;
+  color: var(--primary-color);
+  transition: 0.3s;
 }
 
 /* Buttons */
-.add-to-cart, .buy-now {
-  border: none;
-  padding: 10px 15px;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
 .add-to-cart {
-  background: #e57373;
+  background: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  padding: 8px 24px;
+  width: 100%;
+  line-height: 1.8em;
 }
 
 .buy-now {
   background: #31b3ba;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    outline: none;
-    padding: 8px 24px;
-    text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  padding: 8px 24px;
+  text-transform: capitalize;
 }
 
 .add-to-cart:hover {

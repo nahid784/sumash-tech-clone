@@ -797,29 +797,44 @@ button i {
   margin-bottom: 20px;
 }
 
-.specs-item{
+.specs-item {
   margin-top: 15px;
-  
 }
 
-.sitem-title{
+.sitem-title {
   background-color: #fff;
-    cursor: pointer;
-    font-weight: 700;
-    margin-bottom: 5px;
-    padding: 6px 16px;
-    display: flex;
-    font-size: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding: 6px 16px;
+  display: flex;
+  font-size: 15px;
 }
 
-.sitem-title .expand{
+.sitem-title .expand {
   margin-left: auto;
 }
-.sitem-title .expand img{
+.sitem-title .expand img {
   display: inline-block;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
+.specs-alert {
+  margin-top: 20px;
+}
+
+.alert-data {
+  text-align: center;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  color: #664d03;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+  font-weight: 500;
+}
 
 /* Responsive Part */
 /* max-width = 1200 */

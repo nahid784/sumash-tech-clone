@@ -678,6 +678,12 @@ button i {
   margin-bottom: 10px;
 }
 
+.r-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .phone1 {
   background-color: #fff;
   border-radius: 6px;
@@ -724,4 +730,19 @@ button i {
   /* width: 65px; */
   z-index: 2;
   text-align: center;
+}
+
+.des-title {
+  color: #111926;
+  display: -webkit-box;
+  font-size: 110%;
+  font-weight: 700;
+  line-height: 1.3em;
+  margin: 0;
+  overflow: hidden;
+}
+
+.des-price del {
+  font-size: 80%;
+  margin-left: 10px;
 }

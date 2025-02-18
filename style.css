@@ -849,12 +849,30 @@ button i {
   padding: 15px;
 }
 
-.showcase-card .show-img{
+.showcase-card .show-img {
   width: 100%;
+  margin-bottom: 10px;
 }
 
-.show-img img{
+.show-img img {
   max-width: 100%;
+}
+
+.show-img-footer {
+  margin-bottom: 20px;
+}
+
+.show-img-footer h2 {
+  color: #111926;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.show-img-footer a {
+  text-decoration: none;
+  color: #302bc2;
+  font-weight: 600;
 }
 
 /* Responsive Part */

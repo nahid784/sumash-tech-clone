@@ -878,7 +878,7 @@ button i {
   .single-product,
   .related-product-container,body {
     flex-wrap: wrap;
-    max-width: 540px;
+    max-width: 100vw;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -904,8 +904,8 @@ button i {
   }
   
 }
-.navbar, body{
+/* .navbar, body{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
+} */

@@ -863,7 +863,7 @@ button i {
   }
   .product-container,
   .single-product,
-  .related-product-container {
+  .related-product-container,body {
     flex-wrap: wrap;
     max-width: 540px;
     margin-left: auto;

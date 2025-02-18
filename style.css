@@ -1032,10 +1032,17 @@ button i {
     flex-direction: column;
     align-items: flex-start;
   }
-  /* .points .r_name {
-  font-size: 12px;
-} */
+ 
   .c2.r3 {
     padding: 10px;
   }
+
+  .specs {
+    background-color: transparent;
+  }
+  .specs-item{
+    margin-top: 5px;
+  }
 }
+
+

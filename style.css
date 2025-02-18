@@ -902,10 +902,13 @@ button i {
     background-color: transparent;
     padding: 0;
   }
+
+.price-content b{
+  font-size: 12px;
+}
+
+.price-content p{
+  font-size: 10px;
+}
   
 }
-/* .navbar, body{
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-} */

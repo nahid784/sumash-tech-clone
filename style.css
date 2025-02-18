@@ -564,7 +564,7 @@ main {
   display: flex;
   justify-content: center;
   margin: 8px;
-  text-align: center;
+  text-align: left;
   width: calc(50% - 16px);
   border-color: #acacac;
   flex-direction: row;

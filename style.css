@@ -125,6 +125,8 @@ nav ul li a:hover {
 .nav-right .icons {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .icons .nav-icon {
   background-color: var(--bg-color-two);
@@ -468,6 +470,7 @@ main {
   margin-top: 4px;
   display: flex;
   margin-top: 8px;
+  flex-wrap: wrap;
 }
 /* Price Selection */
 .psection {
@@ -485,7 +488,7 @@ main {
     justify-content: center;
     margin: 8px;
     text-align: center;
-    width: 100%;
+    width: calc(50% - 16px);
     border-color: #acacac;
     flex-direction: row;
     height: auto;

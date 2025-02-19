@@ -884,9 +884,15 @@ button i {
   line-height: 1.3em;
 }
 
-.show-img-footer p{
+.show-img-footer p {
   font-size: 14px;
   margin-bottom: 16px;
+}
+
+.show-img-footer ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+  padding-left: 2rem;
 }
 
 /* Responsive Part */

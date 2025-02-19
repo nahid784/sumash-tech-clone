@@ -895,10 +895,38 @@ button i {
   padding-left: 2rem;
 }
 
-.show-img-footer.two h2,.three h2{
+.show-img-footer.two h2,
+.three h2 {
   font-size: 24px;
   margin-bottom: 5px;
-}  
+}
+
+.show-img-footer .table-row {
+  display: flex;
+  margin-top: 5px;
+}
+.show-img-footer .table-col1 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+  background-color: red;
+}
+.show-img-footer .table-col2 {
+  flex: 0 0 auto;
+  /* width: 40%; */
+  background-color: red;
+}
+
+.product-info-table{
+  width: 100%;
+  border-collapse: collapse; /* Fixes missing borders */
+  border: 1px solid black;
+}
+
+.product-info-table th, 
+.product-info-table td {
+  border: 1px solid gray;
+
+}
 
 /* Responsive Part */
 /* max-width = 1200 */

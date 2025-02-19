@@ -895,6 +895,11 @@ button i {
   padding-left: 2rem;
 }
 
+.show-img-footer.two h2,.three h2{
+  font-size: 24px;
+  margin-bottom: 5px;
+}  
+
 /* Responsive Part */
 /* max-width = 1200 */
 @media screen and (max-width: 1200px) {

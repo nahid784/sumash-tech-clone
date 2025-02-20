@@ -1333,8 +1333,31 @@ footer {
   }
 
   .row2-col2{
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-widgets .social-id{
+    justify-content: center;
+  }
+
+  .row-one-items{
+    gap: 0px;
+  }
+  .footer-row.three .row3-col2{
+    width: 50%;
+  }
+  .footer-row.three .row3-col2{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-row.three .row3-col1, .row3-col3 {
     width: 50%;
     text-align: center;
+  }
+  .footer-row.three .row3-col3{
+    text-align: center;
+    padding-right: 0px;
   }
 }
 

@@ -161,6 +161,11 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 main {
   background-color: #f2f4f8;
   padding: 10px 0px;
@@ -1030,10 +1035,48 @@ footer {
 }
 
 .footer-row .row2-col {
-  background-color: red;
+  background-color: blueviolet;
   flex: 0 0 auto;
   width: 75%;
+  display: flex;
 }
+
+.row2-col .inner-col {
+  flex: 0 0 auto;
+  width: 25%;
+  
+}
+
+.footer-row .row2-col .inner-col h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.inner-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-col .f-link{
+  color: currentColor;
+    outline: none;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.inner-col .f-link:hover{
+ color: var(--accent-color);
+ 
+}
+
+
 
 /* Responsive Part */
 /* max-width = 1200 */

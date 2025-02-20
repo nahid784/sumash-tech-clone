@@ -1036,7 +1036,6 @@ footer {
 }
 
 .footer-row .row2-col1 {
-  background-color: blueviolet;
   flex: 0 0 auto;
   width: 75%;
   display: flex;
@@ -1080,7 +1079,6 @@ footer {
   display: flex;
   flex: 0 0 auto;
   width: 25%;
-  background-color: #0097a7;
 }
 
 .row2-col2 .footer-widgets .paragraph {
@@ -1140,28 +1138,37 @@ footer {
   border: none;
 }
 
-.footer-widgets .store-location{
+.footer-widgets .store-location {
   background: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 5px;
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 500;
-    outline: none;
-    padding: 8px 24px;
-    margin-top: 1.5rem !important;
-    align-items: center;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  color: #fff;
+  display: inline-flex; 
+  align-items: center; 
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  padding: 8px 24px;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease; 
+  justify-content: center;
+}
+
+.footer-widgets .store-location i {
+  margin-right: 5px;
+}
+
+.footer-widgets .store-location:hover {
+  background: var(--primary-color);
+  color: #ffffff !important; 
+  border-color: transparent; 
 }
 
 
-
-
-
-.footer-widgets .store-location:hover{
-  background-color: var(--primary-color);
-  color: white;
+.footer-widgets .store-location:hover i {
+  color: #ffffff !important; 
 }
+
 
 /* Responsive Part */
 /* max-width = 1200 */

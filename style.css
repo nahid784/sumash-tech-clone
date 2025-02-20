@@ -1260,8 +1260,8 @@ footer {
   .product-container,
   .single-product,
   .related-product-container,
-  .footer-container,
-  .footer-row {
+  .footer-row,
+  .footer-container {
     flex-wrap: wrap;
     max-width: 960px;
     margin-left: 2.5rem;
@@ -1274,10 +1274,6 @@ footer {
     margin-right: -15px;
   }
 
-  .footer-row {
-    margin-left: 3.4rem !important;
-    margin-right: 3.4rem !important;
-  }
 
   .box-icon {
     display: none;
@@ -1317,6 +1313,28 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  .footer-row {
+    margin-left: 3.4rem !important;
+    margin-right: 3.4rem !important;
+  }
+
+  .footer-row .row2-col1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row2-col1 .inner-col{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .row2-col2{
+    width: 50%;
+    text-align: center;
   }
 }
 

@@ -202,7 +202,7 @@ main {
 }
 
 .breadcrumb {
-  width: 100%;
+  width: 90%;
   margin: 10px;
   font-size: 14px;
   color: var(--text-color);
@@ -1385,6 +1385,10 @@ footer {
 
   main {
     border-radius: 0px;
+  }
+  .product-container{
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

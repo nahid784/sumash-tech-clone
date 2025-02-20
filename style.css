@@ -164,7 +164,7 @@ nav ul li a:hover {
 main {
   background-color: #f2f4f8;
   padding: 10px 0px;
-  border-radius: 25px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 .single-product {
@@ -846,7 +846,7 @@ button i {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  padding: 15px;
+  padding: 20px;
 }
 
 .showcase-card .show-img {
@@ -908,24 +908,121 @@ button i {
 .show-img-footer .table-col1 {
   flex: 0 0 auto;
   width: 58.33333333%;
-  background-color: red;
 }
 .show-img-footer .table-col2 {
   flex: 0 0 auto;
   /* width: 40%; */
-  background-color: red;
 }
 
-.product-info-table{
+.product-info-table {
   width: 100%;
   border-collapse: collapse; /* Fixes missing borders */
-  border: 1px solid black;
 }
 
-.product-info-table th, 
+.product-info-table th,
 .product-info-table td {
-  border: 1px solid gray;
+  border: 1px solid rgb(184, 184, 184);
+  text-align: left;
+  padding: 10px;
+}
+.product-info-table th {
+  width: 20%;
+}
 
+.showcase-card.two {
+  margin: 1rem 0px;
+}
+
+.showcase-card.two h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-seo-data a {
+  color: #302bc2;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* footer section */
+footer {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.footer-section {
+  max-width: 1320px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-row-one {
+  /* border-top: 1px solid #0c2a2c; */
+  padding: 20px 0px;
+}
+.row-one-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-row1-col {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.icon-box {
+  display: flex;
+}
+
+.icon-box .box-icon i {
+  background-color: #fff;
+  border-radius: 6px;
+  color: var(--accent-color);
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 15px;
+  text-align: center;
+  width: 50px;
+}
+
+.icon-box .box-content h4 {
+  color: var(--accent-color);
+}
+
+.subs-form {
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subs-form .mail-input {
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  padding: 8px 20px;
+  width: calc(100% - 68px);
+}
+
+.subs-form .form-button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  font-size: 18px;
+  height: 50px;
+  margin-left: 8px;
+  width: 50px;
+}
+
+.subs-form .form-button i {
+  font-size: 18px;
+  font-weight: 900;
 }
 
 /* Responsive Part */
@@ -950,11 +1047,10 @@ button i {
   .nav-right,
   .categories {
     display: none;
-    /* Hide desktop menu */
   }
 
   .menu-icon {
-    display: block; /* Show menu icon */
+    display: block;
     font-size: 24px;
     cursor: pointer;
   }

@@ -971,6 +971,7 @@ footer {
   border-top: 1px solid #2a2f38;
   padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-row.one {
@@ -981,6 +982,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+  justify-content: center;
 }
 
 .footer-row1-col {
@@ -1006,12 +1008,14 @@ footer {
 
 .icon-box .box-content h4 {
   color: var(--accent-color);
+  font-size: 20px;
 }
 
 .subs-form {
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .subs-form .mail-input {
@@ -1083,6 +1087,11 @@ footer {
   display: flex;
   flex: 0 0 auto;
   width: 25%;
+  flex-wrap: wrap;
+}
+
+.footer-widgets {
+  width: 100%;
 }
 
 .row2-col2 .footer-widgets .paragraph {
@@ -1250,12 +1259,36 @@ footer {
 @media screen and (max-width: 992px) {
   .product-container,
   .single-product,
-  .related-product-container {
+  .related-product-container,
+  .footer-container,
+  .footer-row {
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 960px;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
     display: flex;
+  }
+
+  footer {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .footer-row {
+    margin-left: 3.4rem !important;
+    margin-right: 3.4rem !important;
+  }
+
+  .box-icon {
+    display: none;
+  }
+
+  .box-content {
+    text-align: center;
+  }
+
+  .row-one-items {
+    gap: 25px;
   }
 
   .col1,
@@ -1278,6 +1311,12 @@ footer {
 
   .phone1 {
     width: 32%;
+  }
+
+  .footer-row1-col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1310,7 +1349,8 @@ footer {
   .product-container,
   .single-product,
   .related-product-container,
-  body {
+  body,
+  footer {
     flex-wrap: wrap;
     max-width: 100vw;
     margin-left: auto;

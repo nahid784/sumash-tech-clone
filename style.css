@@ -1401,7 +1401,6 @@ footer {
 @media screen and (max-width: 992px) {
   .product-container,
   .single-product,
-  .related-product-container,
   .footer-row,
   .footer-container,
   .navbar {
@@ -1525,9 +1524,11 @@ footer {
   main {
     border-radius: 0px;
   }
-  .product-container {
+  .product-container,.related-product-container {
     margin-left: auto;
     margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .add-to-cart {
     padding: 8px 10px;
@@ -1536,7 +1537,7 @@ footer {
 
 @media screen and (max-width: 576px) {
   /* 540px */
-    .product-container,
+  .product-container,
   .single-product,
   .related-product-container,
   body,
@@ -1549,18 +1550,16 @@ footer {
     margin-right: auto;
     display: flex;
   }
-  .product-container {
+  .product-container,.related-product-container {
     padding-right: 12px;
     padding-left: 12px;
   }
-
- 
 
   header {
     width: 100%;
   }
 
-  .row3{
+  .row3 {
     justify-content: space-around;
   }
 
@@ -1577,7 +1576,7 @@ footer {
 
   .buy-btn,
   .cart-btn {
-    width: 45%;
+    width: 47%;
     margin: 0px;
   }
 
@@ -1607,58 +1606,58 @@ footer {
     margin-right: 0px !important;
   }
 
-    .s-bar {
-      width: 100%;
-      padding-left: 15px;
-      padding-left: 15px;
-    }
+  .s-bar {
+    width: 100%;
+    padding-left: 15px;
+    padding-left: 15px;
+  }
 
-    main {
-      border-radius: 0px;
-    }
+  main {
+    border-radius: 0px;
+  }
 
-    .quantity {
-      width: 100%;
-    }
+  .quantity {
+    width: 100%;
+  }
 
-    .related-product {
-      background-color: transparent;
-      padding: 0;
-    }
+  .related-product {
+    background-color: transparent;
+    padding: 0;
+  }
 
-    .price-content b {
-      font-size: 12px;
-    }
+  .price-content b {
+    font-size: 12px;
+  }
 
-    .price-content p {
-      font-size: 10px;
-    }
+  .price-content p {
+    font-size: 10px;
+  }
 
-    .price-box input {
-      height: 20px;
-      margin-right: 10px;
-      width: 15px;
-    }
+  .price-box input {
+    height: 20px;
+    margin-right: 10px;
+    width: 15px;
+  }
 
-    .row2 .psection {
-      padding: 0;
-      padding-left: 2px;
-    }
+  .row2 .psection {
+    padding: 0;
+    padding-left: 2px;
+  }
 
-    .row {
-      justify-content: center;
-    }
+  .row {
+    justify-content: center;
+  }
 
-    .c2.r3 {
-      padding: 10px;
-    }
+  .c2.r3 {
+    padding: 10px;
+  }
 
-    .specs{
-      background-color: transparent;
-    }
-    .specs-item {
-      margin-top: 5px;
-    }
+  .specs {
+    background-color: transparent;
+  }
+  .specs-item {
+    margin-top: 5px;
+  }
 
   .subs-form {
     justify-content: space-between;
@@ -1672,9 +1671,7 @@ footer {
   .footer-right-item .compare-button {
     display: none;
   }
-
 }
-
 
 @media screen and (max-width: 480px) {
   .buy-btn,
@@ -1683,21 +1680,21 @@ footer {
     margin: 5px;
   }
 
-  .buy-now{
+  .buy-now {
     padding: 8px 24px;
   }
-  .row2 .psection{
+  .row2 .psection {
     margin: 2px;
     padding: 4px;
   }
-  .row2, .row3{
+  .row2,
+  .row3 {
     justify-content: space-evenly;
   }
   .price-box input {
     margin-right: 10px;
   }
-  .psection{
+  .psection {
     width: 48%;
   }
-
 }

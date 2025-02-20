@@ -442,6 +442,7 @@ main {
   margin: 10px 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .button1 {
@@ -1551,6 +1552,14 @@ footer {
     margin-right: auto;
     display: flex;
   }
+
+  .c2.r2 h4{
+    width: 100%;
+  }
+
+  .c2 .variants{
+    margin-left: -8px;
+  }
   footer {
     margin-left: 0px;
     margin-right: 0px;
@@ -1602,12 +1611,7 @@ footer {
       justify-content: center;
     }
 
-    .storage-options,
-    .color-options,
-    .region {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+    
 
     .c2.r3 {
       padding: 10px;

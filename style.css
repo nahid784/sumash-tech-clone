@@ -1605,6 +1605,7 @@ footer {
   .footer-row {
     margin-left: 0px !important;
     margin-right: 0px !important;
+  }
 
     .s-bar {
       width: 100%;
@@ -1652,13 +1653,12 @@ footer {
       padding: 10px;
     }
 
-    .specs {
+    .specs{
       background-color: transparent;
     }
     .specs-item {
       margin-top: 5px;
     }
-  }
 
   .subs-form {
     justify-content: space-between;
@@ -1672,10 +1672,11 @@ footer {
   .footer-right-item .compare-button {
     display: none;
   }
+
 }
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
   .buy-btn,
   .cart-btn {
     width: 100%;
@@ -1698,4 +1699,5 @@ footer {
   .psection{
     width: 48%;
   }
+
 }

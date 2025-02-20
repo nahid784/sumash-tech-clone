@@ -1225,12 +1225,12 @@ footer {
 /* footer right item */
 .footer-right-item {
   align-items: center;
-  bottom: 30px;
+  bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  right: 24px;
+  right: -50px;
   z-index: 999;
 }
 
@@ -1290,7 +1290,7 @@ footer {
   width: 44px;
 }
 
-.footer-right-item .feedback-button:hover{
+.footer-right-item .feedback-button:hover {
   background: var(--primary-color);
   color: white;
   transition: 0.3s;
@@ -1299,6 +1299,60 @@ footer {
 .footer-right-item .feedback-button i {
   font-size: 20px;
   margin: 0;
+}
+
+.footer-right-item .chat-img {
+  background: none;
+  border: none;
+  padding: 0;
+  position: relative;
+  width: 25%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-right-item .img-text {
+  background-color: #fff;
+  border-radius: 0 5px 5px;
+  box-shadow: 0 5px 21px 2px #00000029;
+  color: var(--dark-color);
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px 10px;
+  position: absolute;
+  right: calc(100% + 15px);
+  white-space: nowrap;
+  right: 55px;
+}
+
+.footer-right-item .img-text i {
+  color: #b9b9b9;
+  background-color: #646464;
+  padding: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 8px;
+  left: -10px;
+  position: absolute;
+  top: -10px;
+  transition: 0.3s;
+}
+
+.footer-right-item .img-dot {
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  height: 10px;
+  right: 3px;
+  top: 0;
+  width: 10px;
+  z-index: 3;
+}
+
+.footer-right-item img {
+  width: 100%;
 }
 
 /* Responsive Part */

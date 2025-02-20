@@ -1253,6 +1253,9 @@ footer {
     flex: 0 0 auto;
     width: 30%;
   }
+  .show-img-footer .table-col1{
+    width: 100%;
+  }
 }
 
 /* max-width = 992 */
@@ -1309,6 +1312,10 @@ footer {
     width: 32%;
   }
 
+  .show-img-footer .table-col1{
+    width: 100%;
+  }
+
   .footer-row1-col {
     width: 100%;
     display: flex;
@@ -1352,7 +1359,7 @@ footer {
     justify-content: center;
   }
   .footer-row.three .row3-col1, .row3-col3 {
-    width: 50%;
+    width: 100%;
     text-align: center;
   }
   .footer-row.three .row3-col3{

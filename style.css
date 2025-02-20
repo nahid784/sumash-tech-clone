@@ -963,7 +963,7 @@ footer {
   padding: 20px 0;
 }
 
-.footer-row.one{
+.footer-row.one {
   border: none;
 }
 .row-one-items {
@@ -1027,6 +1027,12 @@ footer {
 .subs-form .form-button i {
   font-size: 18px;
   font-weight: 900;
+}
+
+.footer-row .row2-col {
+  background-color: red;
+  flex: 0 0 auto;
+  width: 75%;
 }
 
 /* Responsive Part */

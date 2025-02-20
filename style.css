@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter, sans-serif;
 }
 
 :root {
@@ -23,7 +24,7 @@ body {
   font-family: Inter, sans-serif;
   font-size: 14px;
   line-height: 1.8em;
-  margin: 15px;
+  margin: 15px 15px 0px 15px;
 }
 
 header {
@@ -1132,7 +1133,7 @@ footer {
   transition: 0.3s;
 }
 
-.footer-widgets .social-id a:hover{
+.footer-widgets .social-id a:hover {
   color: white;
   background-color: var(--dark-color);
   border: none;
@@ -1143,14 +1144,14 @@ footer {
   border: 1px solid var(--accent-color);
   border-radius: 5px;
   color: #fff;
-  display: inline-flex; 
-  align-items: center; 
+  display: inline-flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
   outline: none;
   padding: 8px 24px;
   margin-top: 1.5rem;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
   justify-content: center;
 }
 
@@ -1160,13 +1161,53 @@ footer {
 
 .footer-widgets .store-location:hover {
   background: var(--primary-color);
-  color: #ffffff !important; 
-  border-color: transparent; 
+  color: #ffffff !important;
+  border-color: transparent;
+}
+
+.footer-widgets .store-location:hover i {
+  color: #ffffff !important;
+}
+
+.footer-row.three .row3-col1,
+.row3-col3 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+  margin-top: 20px;
 }
 
 
-.footer-widgets .store-location:hover i {
-  color: #ffffff !important; 
+.footer-row.three .row3-col2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+  margin-top: 20px;
+}
+
+.footer-row.three .row3-col2 img {
+  max-width: 200px;
+}
+
+.footer-row.three .row3-col3{
+  text-align: right;
+  padding-right: 20px;
+}
+
+.footer-row.three .row3-col3 .go-up {
+  align-items: center;
+  background: none;
+  border: none;
+  display: inline-flex;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.row3-col3 .go-up .up-icon i{
+  color: var(--accent-color);
+    font-size: 30px;
+    margin-left: 8px;
+
 }
 
 
